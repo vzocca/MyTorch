@@ -1,0 +1,4 @@
+# to uninstall torch
+# cd to the parent directory where torch is installed
+
+rm -rf torch

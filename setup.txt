@@ -1,0 +1,22 @@
+# in a terminal, run the commands
+curl -s https://raw.githubusercontent.com/torch/ezinstall/master/install-deps | bash
+
+# cd to the directory where you want torch installed
+git clone https://github.com/torch/distro.git torch --recursive
+
+# cd inside the torch folder just created
+cd torch; 
+./install.sh
+
+
+# add torch/install/bin to the $PATH variable
+source ~/.bash_profile
+
+# add packages
+luarocks install image
+
+#list packages installed
+luarocks list
+
+# start torch by typing
+th
